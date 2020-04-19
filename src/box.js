@@ -4,9 +4,9 @@ const Box = (props) => {
   return (
     <div className="box">
       <div className="box-item">
-        <input type="text"/>{props.metric} <br/>
+        <input type="text" value={props.bCalc}/>{props.bMetric} <br/>
         <h1>=</h1>
-        <h1>{props.number} kg</h1>
+  <h1>{props.aCalc} {props.aMetric}</h1>
       </div>
     </div>
   )

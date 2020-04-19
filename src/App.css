@@ -1,6 +1,11 @@
+.nav > h1 {
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  font-family: Calibri;
+}
+
 .box {
   border-style: solid;
   border-color: skyblue;
   width: 200px;
-  height: 250px;
+  height: 200px;
 }
