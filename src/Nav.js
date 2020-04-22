@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Nav = () => {
   return (
-    <div class="nav">
+    <div className="nav">
       <h1>Quick Calculator</h1>
     </div>
   );
