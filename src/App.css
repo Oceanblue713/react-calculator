@@ -1,11 +1,24 @@
-.nav > h1 {
+.nav {
+  padding: 10px;
+  border-radius: 25px;
+  margin-bottom: 30px;
   background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+.nav > h1 {
   font-family: Calibri;
+  text-align: center;
+  font-size: 40px;
+  color: white;
 }
 
 .box {
+  text-align: center;
+}
+.box-item {
   border-style: solid;
-  border-color: skyblue;
+  border-radius: 20px;
+  border-color: #00f2fe;
   width: 200px;
   height: 200px;
 }

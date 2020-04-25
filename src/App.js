@@ -8,17 +8,17 @@ class App extends React.Component {
     super();
     this.state = {
       bCalc: '',
-      bMetric: "lbt",
       aCalc: '',
-      aMetric: "Kg"
     }
-
-    // this.handleKgChange = this.handleKgChange.bind(this);
   }
 
   handleKgChange(event){
     const inputValue = event.target.value;
     this.setState({aCalc: (inputValue * 0.454).toFixed(2)});
+  }
+
+  handleCmChange(event){
+    this.setState({aCalc: (event.target.value * 30.48).toFixed(2)});
   }
 
   render(){
@@ -27,10 +27,15 @@ class App extends React.Component {
         <Nav />
         <Box bCalc={this.state.value} 
              bCalcChange={(event) => this.handleKgChange(event)}
-             bMetric={this.state.bMetric} 
+             bMetric="lbt" 
              aCalc = {this.state.aCalc} 
-             aMetric={this.state.aMetric} 
-             onChange={this.handleChange}/>
+             aMetric="Kg" />
+
+        <Box bCalc={this.state.value}
+             bCalcChange={(event) => this.handleCmChange(event)}
+             bMetric="feet"
+             aCalc={this.state.aCalc}
+             aMetric="cm" />
       </div>
     );
   }
