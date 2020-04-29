@@ -12,8 +12,7 @@ class App extends React.Component {
   }
 
   handleKgChange(event){
-    const inputValue = event.target.value;
-    this.setState({aCalc1: (inputValue * 0.454).toFixed(2)});
+    this.setState({aCalc1: (event.target.value * 0.454).toFixed(2)});
   }
 
   handleCmChange(event){
@@ -22,6 +21,10 @@ class App extends React.Component {
 
   handleMlChange(event){
     this.setState({aCalc3: (event.target.value * 29.57).toFixed(2)});
+  }
+
+  handleKmChange(event){
+    this.setState({aCalc4: (event.target.value * 1.609).toFixed(3)});
   }
 
   render(){
@@ -45,6 +48,12 @@ class App extends React.Component {
              bMetric="oz"
              aCalc={this.state.aCalc3}
              aMetric="ml" />
+
+        <Box bCalc={this.state.value} 
+             bCalcChange={(event) => this.handleKmChange(event)}
+             bMetric="mile"
+             aCalc={this.state.aCalc4}
+             aMetric="Km" />
       </div>
     );
   }
