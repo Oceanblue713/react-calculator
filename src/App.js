@@ -6,9 +6,7 @@ import {Nav} from './Nav';
 class App extends React.Component {
   constructor() {
     super();
-    this.state = {
-      bCalc: '',
-    }
+    this.state = {}
   }
 
   handleKgChange(event){
@@ -28,28 +26,30 @@ class App extends React.Component {
   }
 
   render(){
+    const bCalcState = this.state.value
+
     return (
       <div className="App">
         <Nav />
-        <Box bCalc={this.state.value} 
+        <Box bCalc={bCalcState} 
              bCalcChange={(event) => this.handleKgChange(event)}
              bMetric="lb" 
              aCalc = {this.state.aCalc1} 
              aMetric="Kg" />
 
-        <Box bCalc={this.state.value}
+        <Box bCalc={bCalcState}
              bCalcChange={(event) => this.handleCmChange(event)}
              bMetric="feet"
              aCalc={this.state.aCalc2}
              aMetric="cm" />
 
-        <Box bCalc={this.state.value}
+        <Box bCalc={bCalcState}
              bCalcChange={(event) => this.handleMlChange(event)}
              bMetric="oz"
              aCalc={this.state.aCalc3}
              aMetric="ml" />
 
-        <Box bCalc={this.state.value} 
+        <Box bCalc={bCalcState} 
              bCalcChange={(event) => this.handleKmChange(event)}
              bMetric="mile"
              aCalc={this.state.aCalc4}
