@@ -2,6 +2,7 @@ import React from 'react';
 import Box from './box';
 import './App.css';
 import {Nav} from './Nav';
+import Date from './Date';
 
 class App extends React.Component {
   constructor() {
@@ -31,6 +32,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Nav />
+        <Date />
         <Box bCalc={bCalcState} 
              bCalcChange={(event) => this.handleKgChange(event)}
              bMetric="lb" 
