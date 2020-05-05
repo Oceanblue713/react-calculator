@@ -32,7 +32,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Nav />
-        <Time date={new Date()}/>
+        <Time />
         <Box bCalc={bCalcState} 
              bCalcChange={(event) => this.handleKgChange(event)}
              bMetric="lb" 
