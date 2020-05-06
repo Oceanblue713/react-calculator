@@ -22,6 +22,14 @@ h2 {
   margin-bottom: 30px;;
 }
 
+.flexbox-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .box {
   text-align: center;
 }
