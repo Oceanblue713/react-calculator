@@ -4,6 +4,7 @@ import './App.css';
 import {Nav} from './Nav';
 import Calculator from './Calculator';
 import Time from './Time';
+import Timer from './Timer';
 
 class App extends React.Component {
   render(){
@@ -11,6 +12,7 @@ class App extends React.Component {
       <div className="App">
         <Nav />
         <Time />
+        <Timer />
         <Calculator />
       </div>
     );
