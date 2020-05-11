@@ -1,7 +1,6 @@
 describe('Kitchen Calculator Titles', () => {
-  before(() => {
+  beforeEach(() => {
     browser.url('https://master.ds6e6jixc9bcf.amplifyapp.com/');
-    $("h2").waitForExist({ timeout: 5000 });
   });
 
   it('title is Kitchen Calculator', () => {
@@ -18,7 +17,16 @@ describe('The formulas', () => {
   it('oz to ml', () => {
     const ozForm = "div:nth-of-type(1) > .box-item > input"
     $(ozForm).setValue('1');
-    const mlForm = $("div:nth-of-type(1) > .box-item > h1:nth-of-type(2)").getText();
-    expect(mlForm).to.equal("29.57 ml");
+    const mlFormValue = $("div:nth-of-type(1) > .box-item > h1:nth-of-type(2)").getText();
+    expect(mlFormValue).to.equal("29.57 ml");
+    browser.pause(2000);
+  });
+
+  it('Ib to Kg', () => {
+    const lbForm = "div:nth-of-type(2) > .box-item > input"
+    $(lbForm).setValue('1');
+    const kgFormValue = $("div:nth-of-type(2) > .box-item > h1:nth-of-type(2)").getText();
+    expect(kgFormValue).to.equal("0.45 Kg");
+    browser.pause(2000);
   });
 });

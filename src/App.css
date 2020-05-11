@@ -18,6 +18,36 @@ h2 {
   text-align: center;
 }
 
+#start-button {
+  border: none;
+  color: white;
+  font-size: 20px;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  border-radius: 50%;
+  height: 60px;
+  weight: 30px;
+}
+
+#stop-button {
+  border: none;
+  color: white;
+  font-size: 20px;
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+  border-radius: 50%;
+  height: 60px;
+  weight: 30px;
+}
+
+#reset-button {
+  border: none;
+  color: white;
+  font-size: 20px;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  border-radius: 50%;
+  height: 60px;
+  weight: 30px;
+}
+
 .Time {
   margin-bottom: 30px;;
 }
