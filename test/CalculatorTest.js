@@ -1,17 +1,18 @@
 describe('Kitchen Calculator Titles', () => {
-  beforeEach(() => {
-    browser.url('https://master.ds6e6jixc9bcf.amplifyapp.com/');
+  before(() => {
+    browser.url("https://master.ds6e6jixc9bcf.amplifyapp.com/");
+    browser.setWindowSize(375, 667)
   });
 
   it('title is Kitchen Calculator', () => {
     const title = browser.getTitle();
-    // expect(title).to.equal("Kitchen Calculator");
+    expect(title).to.equal("Kitchen Calculator");
   });
 });
 
 describe('The formulas', () => {
   before(() => {
-    browser.url('https://master.ds6e6jixc9bcf.amplifyapp.com/');
+    browser.url( "https://master.ds6e6jixc9bcf.amplifyapp.com/");
   });
 
   it('oz to ml', () => {
