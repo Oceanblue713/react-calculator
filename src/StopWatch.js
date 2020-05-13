@@ -1,23 +1,31 @@
 import React from 'react';
 
-class Timer extends React.Component {
+class StopWatch extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       isStarted: false,
       time: 0,
+      currentTime: new Date().getTime(),
     }
   }
 
   handleStart(){
     this.setState({
       isStarted: true,
+      time: this.state.time += 1,
     })
   }
 
   handleStop(){
     this.setState({
       isStarted: false,
+    })
+  }
+
+  handleReset(){
+    this.setState({
+      time: 0,
     })
   }
 
@@ -30,15 +38,13 @@ class Timer extends React.Component {
     }
     return (
       <div>
-        <h2>Timer</h2>
-        <h2>00:00</h2>
-        <h2>{button} <button id="reset-button">Reset</button></h2>
+        <h2>StopWatch</h2>
+        <h2>{this.state.currentTime}</h2>
+        <h2>{button} <button id="reset-button" onClick={() => {this.handleReset()}}>Reset</button></h2>
       </div>
 
     )
   }
 }
 
-export default Timer;
-
-
+export default StopWatch;
