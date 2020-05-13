@@ -6,6 +6,7 @@ class StopWatch extends React.Component {
     this.state = {
       isStarted: false,
       time: 0,
+      currentTime: new Date().getTime(),
     }
   }
 
@@ -38,7 +39,7 @@ class StopWatch extends React.Component {
     return (
       <div>
         <h2>StopWatch</h2>
-        <h2>{this.state.time}</h2>
+        <h2>{this.state.currentTime}</h2>
         <h2>{button} <button id="reset-button" onClick={() => {this.handleReset()}}>Reset</button></h2>
       </div>
 
