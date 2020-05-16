@@ -1,4 +1,4 @@
-body {
+*{
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #303030;
 }
@@ -83,7 +83,7 @@ h2 {
 .box-item {
   border-style: solid;
   border-radius: 10px;
-  border-color: #00f2fe;
+  border-color: #303030;
   width: 220px;
   height: 180px;
 }

@@ -10,7 +10,10 @@ class StopWatch extends React.Component {
   }
 
   componentDidMount() {
-    this.timeID = setInterval(() => this.setState({time: this.state.time+1}), 1000);
+    if(this.state.isStarted){
+      this.timeID = setInterval(() => this.setState({time: this.state.time+1}), 1000);
+      // console.log(this.state.isStarted);
+    }
   }
 
   componentWillUnmount() {
@@ -31,13 +34,14 @@ class StopWatch extends React.Component {
 
   handleReset(){
     this.setState({
+      isStarted: false,
       time: 0,
     })
   }
 
   render() {
     let button;
-    if(this.state.time){
+    if(this.state.isStarted){
       button = (<button id="stop-button" onClick={() => {this.handleStop()}}>Stop</button>)
     } else {
       button = (<button id="start-button" onClick={() => {this.handleStart()}}>Start</button>)

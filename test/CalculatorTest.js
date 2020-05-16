@@ -36,5 +36,5 @@ describe('The formulas', () => {
     const fahrenheitFormValue = $(strings.fahrenheitFormValue).getText();
     expect(fahrenheitFormValue).to.equal("33.80 F");
     browser.pause(2000);
-  })
+  });
 });
