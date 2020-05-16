@@ -31,6 +31,10 @@ class Calculator extends React.Component{
     this.setState({aCalc6: (event.target.value * 9/5 + 32).toFixed(2)});
   }
 
+  handleTeaChange(event) {
+    this.setState({aCalc7: (event.target.value * 3)});
+  }
+
   render(){
     const bCalcState = this.state.value
 
@@ -47,6 +51,13 @@ class Calculator extends React.Component{
              bMetric="lb" 
              aCalc = {this.state.aCalc1} 
              aMetric="Kg" />
+
+        <Box bCalc={bCalcState} 
+             bCalcChange={(event) => this.handleTeaChange(event)}
+             bMetric="Tablespoon"
+             aCalc={this.state.aCalc7}
+             aMetric="Teaspoon"
+        />
 
         <Box bCalc={bCalcState}
              bCalcChange={(event) => this.handleCelsiusFahChange(event)}
