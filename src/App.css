@@ -34,6 +34,10 @@ h2 {
   text-align: center;
 }
 
+button:focus {
+  outline: 0;
+}
+
 #start-button {
   border: none;
   color: white;
@@ -41,7 +45,7 @@ h2 {
   background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
   border-radius: 50%;
   height: 60px;
-  weight: 30px;
+  width: 60px;
 }
 
 #stop-button {
@@ -51,7 +55,7 @@ h2 {
   background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
   border-radius: 50%;
   height: 60px;
-  weight: 30px;
+  width: 60px;
 }
 
 #reset-button {
@@ -61,7 +65,7 @@ h2 {
   background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
   border-radius: 50%;
   height: 60px;
-  weight: 30px;
+  width: 60px;
 }
 
 .Time {
