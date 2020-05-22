@@ -3,7 +3,7 @@ const strings = require('./Selector');
 describe('Kitchen Calculator Titles', () => {
   before(() => {
     browser.url(strings.url);
-    browser.setWindowSize(375, 667)
+    browser.setWindowSize(375, 667);
   });
 
   it('title is Kitchen Calculator', () => {

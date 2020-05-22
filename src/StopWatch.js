@@ -7,36 +7,29 @@ class StopWatch extends React.Component {
       isStarted: false,
       time: 0,
     }
-  }
-
-  componentDidMount(){
-    console.log("DidMount");
-    setInterval(() => this.setState({time: this.state.time + 1}), 1000);
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.time);
+    this.timer = '';
   }
 
   handleStart(){
     this.setState({
       isStarted: true,
     });
+    this.timer = setInterval(() => this.setState({time: this.state.time + 1}), 1000);
   }
 
   handleStop(){
     this.setState({
       isStarted: false,
-      time: 0,
     });
-    clearInterval();
+    clearInterval(this.timer);
   }
 
   handleReset(){
     this.setState({
       isStarted: false,
       time: 0,
-    })
+    });
+    clearInterval(this.timer);
   }
 
   render() {

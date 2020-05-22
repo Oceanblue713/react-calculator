@@ -8,4 +8,7 @@ module.exports = {
   "teaspoonInput": "div:nth-of-type(3) > .box-item > h1:nth-of-type(2)",
   "celiciousInput": "div:nth-of-type(4) > .box-item > input",
   "fahrenheitFormValue": "div:nth-of-type(4) > .box-item > h1:nth-of-type(2)",
+  "StopWatchStartButton": "#start-button",
+  "StopWatchStopButton": "#stop-button",
+  "StopWatchResetButton": "#reset-button",
 }
