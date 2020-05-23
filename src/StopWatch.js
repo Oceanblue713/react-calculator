@@ -40,10 +40,13 @@ class StopWatch extends React.Component {
     } else {
       button = (<button id="start-button" onClick={() => {this.handleStart()}}>Start</button>)
     }
+
     return (
       <div>
         <h2>StopWatch</h2>
-        <h2>{this.state.time}</h2>
+        <h2 id="stop-watch-time">
+          {this.state.time}
+        </h2>
         <h2>{button} <button id="reset-button" onClick={() => {this.handleReset()}}>Reset</button></h2>
       </div>
 
