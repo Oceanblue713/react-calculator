@@ -1,0 +1,13 @@
+.Home {
+  margin-top: 60px;
+}
+
+.Home h2 {
+  background-color: #59b300;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}

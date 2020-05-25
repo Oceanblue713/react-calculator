@@ -13,8 +13,10 @@ describe('StopWatch', () => {
 
   it('Start button is clickable', () => {
     $(strings.StopWatchStartButton).click();
-    browser.pause(1000);
+    browser.pause(5000);
     const stopButton = $(strings.StopWatchStopButton).isDisplayed();
     expect(stopButton).to.equal(true);
+    // const time = $(strings.StopWatchTime).getText();
+    // expecct(time).to.include("5");
   });
 });
