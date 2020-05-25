@@ -1,9 +1,11 @@
 import React from 'react';
-import './stylesheets/About.css'
+import './stylesheets/About.css';
+import { BackButton } from './BackButton';
 
 export const About = () => {
   return(
     <div className="About">
+      <BackButton />
       <h2>About This Page</h2>
       <p>Kitchen Calculator is an application whici is designing for cooking beginners to intermidiate from my cooking experiences.
         I cook Japanese cusines often, and I check recipes from Japanese website or books. When I cook, I have to  
