@@ -1,8 +1,6 @@
 import React from 'react';
 
 const styleBackButton = {
-  "margin-top": 20,
-  "margin-bottom": 30,
   "display": "flex",
   "justify-content": "center",
   "align-items": "center",

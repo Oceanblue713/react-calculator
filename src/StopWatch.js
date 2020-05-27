@@ -1,4 +1,5 @@
 import React from 'react';
+import { BackButton } from './BackButton';
 
 class StopWatch extends React.Component {
   constructor(props) {
@@ -43,6 +44,7 @@ class StopWatch extends React.Component {
 
     return (
       <div>
+        <BackButton />
         <h2>StopWatch</h2>
         <h2 id="stop-watch-time">
           {this.state.time}
