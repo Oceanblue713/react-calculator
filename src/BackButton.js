@@ -1,8 +1,6 @@
 import React from 'react';
 
 const styleBackButton = {
-  "margin-top": 20,
-  "margin-bottom": 30,
   "display": "flex",
   "justify-content": "center",
   "align-items": "center",
@@ -18,7 +16,7 @@ const styleH2 = {
 export const BackButton = () => {
   return (
     <div className="back-button" style={styleBackButton}>
-      <a href="/"><h2 style={styleH2}>To Home</h2></a>
+      <a href="/"><h2 style={styleH2}>Home</h2></a>
     </div>
   )
 }

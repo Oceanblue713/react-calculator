@@ -3,3 +3,14 @@ p {
   width: 400px;
   padding: 5px;
 }
+
+.About {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-page {
+  width: 394px;
+}
