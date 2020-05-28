@@ -1,6 +1,7 @@
 import React from 'react';
 import Box from './box';
-import { BackButton } from './BackButton'
+import { BackButton } from './BackButton';
+import Time from './Time';
 
 class Calculator extends React.Component{
   constructor(props) {
@@ -41,6 +42,7 @@ class Calculator extends React.Component{
 
     return (
       <div className="flexbox-container">
+        <Time />
         <BackButton />
         <Box bCalc={bCalcState}
              bCalcChange={(event) => this.handleMlChange(event)}
