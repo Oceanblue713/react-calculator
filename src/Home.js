@@ -19,6 +19,7 @@ class Home extends React.Component{
             <h2>Watch</h2>
           </Link>
         </div>
+        <footer>&copy;AJLily</footer>
       </div>
     )
   }
