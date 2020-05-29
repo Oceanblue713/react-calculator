@@ -1,13 +1,11 @@
 import React from 'react';
-import Box from './box';
 import './App.css';
 import {Nav} from './Nav';
 import Home from './Home';
 import {About} from './About';
 import Calculator from './Calculator';
-import Time from './Time';
 import StopWatch from './StopWatch';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 class App extends React.Component {
   render(){

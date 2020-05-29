@@ -11,6 +11,7 @@ const styleH2 = {
   "border-radius": 4,
   "padding": 7,
   "width": 150,
+  "color": "whitesmoke",
 }
 
 export const BackButton = () => {

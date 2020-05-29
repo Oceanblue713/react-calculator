@@ -47,13 +47,13 @@ class StopWatch extends React.Component {
       <div>
         <Time />
         <BackButton />
-        <h2>StopWatch</h2>
+        <h2 id="stop-watch-h2">StopWatch</h2>
         <h2 id="stop-watch-time">
           {this.state.time}
         </h2>
         <h2>{button} <button id="reset-button" onClick={() => {this.handleReset()}}>Reset</button></h2>
+        <footer>&copy;AJLily</footer>
       </div>
-
     )
   }
 }
