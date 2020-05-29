@@ -6,20 +6,21 @@
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-.App::before {
+body::before {
   content: "";
-  position: absolute;
+  position: fixed;
   z-index: -1;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   background: url('./images/kitchen.jpg');
+  background-size: cover;
   filter: grayscale(100%);
-  opacity: 0.3;
+  opacity: 0.2;
+  display: block;
 }
 
 .nav {
@@ -34,6 +35,14 @@ body {
 
 h2 {
   text-align: center;
+}
+
+#stop-watch-h2{
+  margin-bottom: 30px;
+}
+
+#stop-watch-time{
+  margin-bottom: 30px;
 }
 
 button:focus {
@@ -81,6 +90,7 @@ button:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .box {
