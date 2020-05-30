@@ -1,6 +1,8 @@
 module.exports = {
   "url": "https://master.ds6e6jixc9bcf.amplifyapp.com/",
   "homeAboutButton": "=About",
+  "homeCalculatorButton": "=Calculator",
+  "homeWatchButton": "=Watch",
   "ozInput": "div:nth-of-type(1) > .box-item > input",
   "mlFormValue": "div:nth-of-type(1) > .box-item > h1:nth-of-type(2)",
   "lbInput": "div:nth-of-type(2) > .box-item > input",
