@@ -1,7 +1,10 @@
 module.exports = {
   "url": "https://master.ds6e6jixc9bcf.amplifyapp.com/",
+  "urlCal": "https://master.ds6e6jixc9bcf.amplifyapp.com/calculator",
   "homeAboutButton": "=About",
-  "ozInput": "div:nth-of-type(1) > .box-item > input",
+  "homeCalculatorButton": "=Calculator",
+  "homeWatchButton": "=Watch",
+  "ozInput": "div:nth-of-type(3) > .box-item > h1:nth-of-type(2)",
   "mlFormValue": "div:nth-of-type(1) > .box-item > h1:nth-of-type(2)",
   "lbInput": "div:nth-of-type(2) > .box-item > input",
   "kgFormValue": "div:nth-of-type(2) > .box-item > h1:nth-of-type(2)",
