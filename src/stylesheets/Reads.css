@@ -1,0 +1,7 @@
+.reads a h2:hover{
+  color: blue;
+}
+
+.reads a h2:active{
+  color: blue;
+}

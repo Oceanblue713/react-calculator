@@ -5,7 +5,7 @@ import { BackButton } from './BackButton';
 export const About = () => {
   return(
     <div>
-      <BackButton />
+      <BackButton title={'Home'} route={"/"}/>
       <div className="About">
         <div className="about-page">
         <h2>About This Page</h2>
@@ -27,7 +27,6 @@ export const About = () => {
         </p>
         </div>
       </div>
-      <footer>&copy;AJLily</footer>
     </div>
   )
 };

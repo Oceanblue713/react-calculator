@@ -43,7 +43,7 @@ class Calculator extends React.Component{
     return (
       <div className="flexbox-container">
         <Time />
-        <BackButton />
+        <BackButton title={"Home"} route={"/"}/>
         <Box bCalc={bCalcState}
              bCalcChange={(event) => this.handleMlChange(event)}
              bMetric="oz"

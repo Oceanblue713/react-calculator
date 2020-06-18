@@ -14,10 +14,10 @@ const styleH2 = {
   "color": "whitesmoke",
 }
 
-export const BackButton = () => {
+export const BackButton = ({title, route}) => {
   return (
     <div className="back-button" style={styleBackButton}>
-      <a href="/"><h2 style={styleH2}>Home</h2></a>
+      <a href={route}><h2 style={styleH2}>{title}</h2></a>
     </div>
   )
 }

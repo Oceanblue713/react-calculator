@@ -18,6 +18,9 @@ class Home extends React.Component{
           <Link to="/watch">
             <h2>Watch</h2>
           </Link>
+          <Link to="/reads">
+            <h2>Short Reads</h2>
+          </Link>
         </div>
         <footer>&copy;AJLily</footer>
       </div>
