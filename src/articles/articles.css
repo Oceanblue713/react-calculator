@@ -1,0 +1,21 @@
+.articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.articles h3 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-top: 25px;
+  width: 360px;
+  padding: 5px;
+  margin: 2px;
+  margin-right: 2px;
+  font-size: 18px;
+}

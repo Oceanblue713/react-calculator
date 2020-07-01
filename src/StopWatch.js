@@ -46,7 +46,7 @@ class StopWatch extends React.Component {
     return (
       <div>
         <Time />
-        <BackButton />
+        <BackButton title={"Home"} route={"/"}/>
         <h2 id="stop-watch-h2">StopWatch</h2>
         <h2 id="stop-watch-time">
           {this.state.time}
