@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const styleBackButton = {
   "display": "flex",
@@ -17,7 +18,7 @@ const styleH2 = {
 export const BackButton = ({title, route}) => {
   return (
     <div className="back-button" style={styleBackButton}>
-      <a href={route}><h2 style={styleH2}>{title}</h2></a>
+      <Link to={route}><h2 style={styleH2}>{title}</h2></Link>
     </div>
   )
 }
