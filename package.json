@@ -47,7 +47,7 @@
     "@wdio/spec-reporter": "^6.1.5",
     "@wdio/sync": "^6.1.5",
     "chai": "^4.2.0",
-    "chromedriver": "81.0.0",
+    "chromedriver": "119.0.1",
     "mocha": "^7.1.2",
     "selenium-standalone": "^6.17.0",
     "wdio-appium-service": "^0.2.3",
